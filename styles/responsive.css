@@ -1,0 +1,131 @@
+/*
+width padrão: 1758px
+OBS: ajsutar o footer automaticmente
+breakpoint one: 875px -> left-area não existe mais
+breakpoint two: 438px -> rigth-area deixa de ter bordas, ajustar o margin também
+breakpoint three: 273px -> o google play fica abaixo do app store
+
+*/
+
+/*>>>>>>>>>>>>>Breakpoint one<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (max-width: 875px) {
+  body {
+    grid-template-areas: 
+    "........... ..........  ..........."
+    "........... rigth-area  ..........."
+    "bottom-area bottom-area bottom-area"
+    ;
+    grid-template-columns: minmax(auto, 262.5px) 350px minmax(auto, 262.5px);
+    grid-template-rows: 15px 680px 141px;
+    }
+    
+    .left {
+      display: none;
+      
+    }
+
+    .rigth {
+      margin-top: 20px;
+    }
+
+
+    .bottom {
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+
+   
+
+/*>>>>>>>>>>>>>End Breakpoint one<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+/*>>>>>>>>>>>>>Breakpoint two<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (max-width: 450px) {
+  body {
+    grid-template-areas: 
+    "rigth-area"
+    "bottom-area"
+    ;
+    grid-template-columns: minmax(auto, 450px); 
+    grid-template-rows: 666px 193px;
+    justify-content: center;
+    justify-items: center;
+    }
+    
+    .left {
+      display: none;
+      
+    }
+
+    .rigth {
+      margin-top: 5px;
+    }
+
+    .container-enter {
+      border: none;
+    }
+
+    .form-img {
+      margin-bottom: 10px;
+    }
+
+    .container-create {
+      border: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .app {
+      margin-top: 50px;
+    }
+
+    .bottom {
+      margin-top: 20px;
+
+    }
+
+
+}
+
+/*>>>>>>>>>>>>>End Breakpoint two<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+/*>>>>>>>>>>>>>Breakpoint three<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (max-width: 278px) {
+  .app-ag {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .form-img {
+    margin-bottom: 5px;
+  }
+
+  .container-create {
+    
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .app {
+    margin-top: 4px;
+  }
+
+  .bottom {
+    margin-top: 10px;
+
+  }
+}
+
+/*>>>>>>>>>>>>>End Breakpoint three<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

@@ -1,0 +1,360 @@
+
+body {
+  max-width: 1758px;
+  max-height: 860px;
+  background: #FAFAFA;
+  display: grid;
+  
+}
+
+/*Nomeando as áreas do grid areas*/
+
+.left {
+  grid-area: left-area;
+}
+
+.rigth {
+  grid-area: rigth-area;
+}
+
+.bottom {
+  grid-area: bottom-area;
+}
+/*---------------end nomeando grid areas-----------------------------*/
+
+/*----------->>>>>>>>>Instanciando o Grid Area<<<<<<<<-------------------*/
+body {
+grid-template-areas: 
+"........... ..........  ..........  ..........."
+"........... left-area   rigth-area  ..........."
+"bottom-area bottom-area bottom-area bottom-area"
+;
+grid-template-columns: minmax(auto, 543.5px) 455px 350px minmax(auto, 543.5px);
+grid-template-rows: 30px 680px 140px;
+}
+
+
+/*----------->>>>>>>>>End Instanciando o Grid Area<<<<<<<<-------------------*/
+
+
+.left {
+  grid-area: left-area;
+  display: flex;
+  max-width: 455px;
+  max-height: 660px;
+ 
+}
+
+.img-phone img {
+  display: flex;
+  width: 454px;
+  height: 660px;
+}
+
+.img-unsplash {
+  display: flex;
+  position: relative;
+  right: 308px;
+  top: 115px;
+  
+}
+.img-unsplash-random {
+  width: 258px;
+  height: 450px;
+}
+  
+
+/*----------->>>>>>>>>Criando Grid Area no Rigth<<<<<<<<-------------------*/
+.rigth {
+  grid-area: rigth-area;
+  grid-template-columns: repeat(auto-fit, 350px);
+  display: grid;
+  max-width: 350px;
+  max-height: 660px;
+  margin-top: 42px;
+}
+
+.container-enter {
+  grid-area: first;
+} 
+
+.container-create {
+  grid-area: two;
+}
+
+.container-enter {
+  grid-area: three;
+}
+
+.rigth {
+  grid-template-areas: 
+  "three"
+  "two"
+  "first"
+  ;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: 385px 65px 100px;
+  row-gap: 15px;
+}
+
+/*----------->>>>>>>>>End Grid Area no Rigth<<<<<<<<-------------------*/
+
+
+/*>>>>>>>>>>>>>>>>>>>Start Container-enter<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.container-enter {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+}
+
+.form-img {
+  width: 175px;
+  max-height: 51px;
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+.login-access, .login-password {
+  width: 257px;
+  height: 20px;
+  background: rgba(var(--b3f,250,250,250),1);
+  font-weight: 600;
+  padding: 9px 0 7px 8px;
+  color: rgba(var(--i1d,38,38,38),1);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  margin-left: 40px;
+}
+.login-access {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.text-login {
+  
+  text-overflow: ellipsis;
+  color: #dbdbdb;
+  font-weight: bold;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+}
+
+.btn-enter {
+  width: 270px;
+  height: 30px;
+  color: rgba(var(--eca,255,255,255),1);
+  font-weight: 600;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  background-color: rgba(var(--d69,0,199,246),.3);
+  opacity: 1;
+  border-radius: 5%;
+  margin-left: 40px;
+  margin-top: 13px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 9px 0 7px 8px;
+  
+}
+
+.text-p {
+  margin-left: 40px;
+  font-size: 20px;
+
+}
+
+.description-p {
+  color: rgba(var(--f52,142,142,142),1);
+  font-weight: 600;
+  
+}
+
+.description-p::before, .description-p::after {
+  content: '';
+  display: inline-block;
+  width: 115px;
+  margin-right: 10px;
+  background-color: rgba(var(--b38,219,219,219),1);
+  height: 1px; 
+  
+}
+
+.description-p::after {
+  margin-left: 10px;
+}
+
+.container-face img {
+  width: 16px;
+  height: 16px;
+  
+}
+
+.container-face {
+  margin-left: 80px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.container-face a {
+  font-size: 18px;
+  color:#385185;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.new-password {
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.new-password a {
+
+  font-size: 13px;
+  color:#385185;
+  text-decoration: none;
+}
+
+/*>>>>>>>>>>>>>>>>>>>End Conateiner-enter<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.container-create {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+}
+
+.container-create-pa {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.container-create a {
+  
+  color: rgba(var(--d69,0,149,246),1);
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.app-p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.app-ag {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+.apple, .google {
+  width: 136px;
+  height: 40px;
+}
+
+.bottom {
+  margin-top: 50px;
+  display: grid;
+}
+
+.ul-one {
+  grid-area: ul-one;
+}
+
+.ul-two {
+  grid-area: ul-two;
+}
+
+.p-footer {
+  grid-area: p-footer;
+}
+
+.bottom {
+  grid-template-areas: 
+  "ul-one"
+  "ul-two"
+  "p-footer"
+  ;
+ 
+}
+
+.menu-footer {
+  max-height: 120px;
+}
+
+
+ .one-li {
+   text-decoration: none;
+   margin-right: 10px;
+   color: rgba(var(--f52,142,142,142),1);
+   font-size: 14px;
+   
+ }
+
+ .p-footer {
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   color: rgba(var(--f52,142,142,142),1);
+   font-size: 14px;
+ }
+
+ 
+ .ul-one {
+   display: flex;
+   line-height: 30px;
+   justify-content: center;
+   justify-items: center;
+   
+ }
+
+ .ul-two {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
