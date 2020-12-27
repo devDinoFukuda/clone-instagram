@@ -13,6 +13,17 @@ Desafio de reconstruir a página inicial de login do Instagram.
 
 <br>
 
+<p align="center">
+  <a href="#-Deploy-do-projeto">Deploy do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Sobre-Bootcamp-everis-FullStack-Developer">Sobre Bootcamp everis FullStack Developer</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Como-rodar-o-projeto">Como rodar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Entre-em-contato">Contato</a>
+</p>
+<br><br>
+
+<br>
+
 ## Deploy do Projeto: 
 ### Click:point_right: [![Deploy](./images/badges/instagram.svg?raw=true)](https://devdinofukuda.github.io/clone-instagram/) 
 
