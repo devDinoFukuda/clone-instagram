@@ -1,0 +1,22 @@
+{
+  "name": "clone-instagram",
+  "version": "1.0.0",
+  "description": "Clone da página de login do Instagram. O mesmo faz parte do Bootcamp everis FullStack Developer da Digital Innovation One, no qual estou participando.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devDinoFukuda/clone-instagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devDinoFukuda/clone-instagram/issues"
+  },
+  "homepage": "https://github.com/devDinoFukuda/clone-instagram#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
